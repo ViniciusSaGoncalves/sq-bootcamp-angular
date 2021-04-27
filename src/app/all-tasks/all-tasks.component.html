@@ -1,1 +1,11 @@
-<p>all-tasks works!</p>
+<mat-accordion>
+  <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Todas as tarefas
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <app-agenda-task [tasks]="allTasks" [show]="true"></app-agenda-task>
+  </mat-expansion-panel>
+</mat-accordion>
+
