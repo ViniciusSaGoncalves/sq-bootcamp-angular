@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AgendaComponent } from './agenda/agenda.component';
+import { AllTasksComponent } from './all-tasks/all-tasks.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
 const routes: Routes = [
@@ -12,6 +13,10 @@ const routes: Routes = [
   {
     path: 'agenda',
     component: AgendaComponent
+  },
+  {
+    path: 'tasks',
+    component: AllTasksComponent
   },
   {
     path: '**',
