@@ -8,6 +8,9 @@
       </mat-checkbox>
       <span [ngClass]="{ 'task-done': task.done === true }">
         {{ task.title }}
+        <mat-panel-description  *ngIf="show === true">
+          {{task.remindMe | date: 'dd/MM/yyyy'}}
+        </mat-panel-description>
       </span>
     </div>
     <span class="spacer"></span>

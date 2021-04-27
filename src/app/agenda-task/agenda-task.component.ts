@@ -10,6 +10,7 @@ import { TaskService } from '../services/task.service';
 })
 export class AgendaTaskComponent implements OnInit {
   @Input() tasks: Task[] = [];
+  @Input() show: boolean = false;
 
   constructor(private taskServe: TaskService) { }
 
